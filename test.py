@@ -1,8 +1,10 @@
 import time
+import os
+
 time.sleep(10)
 i=0
 while True:
-    fname="demofile{}.txt".format(i)
+    fname="output/demofile{}.txt".format(i)
     print("creating file ", fname)
     f = open(fname, "a")
     f.write("Now the file has more content!")
